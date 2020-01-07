@@ -10,15 +10,30 @@
         .btnstyle {
             height: 40px;
             width: 100px;
-            background-color:blueviolet ;
+            background-color: blueviolet;
             font-size: medium;
         }
-        .btnstyles{
+
+        .btnstyles {
             height: 70px;
             width: 150px;
-            background-color:blueviolet ;
+            background-color: blueviolet;
             font-size: medium;
 
+        }
+
+        @media only screen and (max-width: 800px) {
+            .query {
+                font-size: 60px;
+                color: blue;
+            }
+        }
+
+        @media only screen and (min-width: 600px) {
+            .query {
+                font-size: 40px;
+                color: darkgoldenrod;
+            }
         }
     </style>
 </head>
@@ -27,15 +42,16 @@
     <div>
         <div style="float: right;">
             <button type="button" class="btnstyle">Gmail</button>
-            <button type="button"class="btnstyle">Images</button>
-            <button type="button"class="btnstyle">...</button>
-            <button type="button"class="btnstyle">sign in</button>
+            <button type="button" class="btnstyle">Images</button>
+            <button type="button" class="btnstyle">...</button>
+            <button type="button" class="btnstyle">sign in</button>
         </div>
         <div>
             <img src="yo.png" style="width: 40%;height: 300px; margin-left: 30%; margin-top: 10%;"><br>
-           
-            <button type="button" class="btnstyles" style="position: relative; margin-left: 50%; ">Google search</button> &nbsp;&nbsp;
-            <button type="button" class="btnstyles" >I'am feeling lucky</button>
+
+            <button type="button" class="btnstyles query" style="position: relative; margin-left: 50%; ">Google
+                search</button> &nbsp;&nbsp;
+            <button type="button" class="btnstyles query">I'am feeling lucky</button>
 
         </div>
         <div>
